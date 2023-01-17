@@ -19,7 +19,7 @@ data "aws_ec2_instance_type_offerings" "myec2_type1" {
 # so now we have the utiltiy above but how can we test if in the az's its supported? we use the outputs
 # Output
 output "output_v1_1" {
-    description = "To check if the instance type is supported in the region"
+    description = "To check if the instance type is supported in the az"
     value =  data.aws_ec2_instance_type_offerings.myec2_type1.instance_types
   
 }
