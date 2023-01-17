@@ -23,3 +23,5 @@ output "output_v1_1" {
     value =  data.aws_ec2_instance_type_offerings.myec2_type1.instance_types
   
 }
+
+# If nothing shows in the output when doing a plan, it means the instance type ins't supported
